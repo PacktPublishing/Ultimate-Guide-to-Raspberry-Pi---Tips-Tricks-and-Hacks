@@ -1,0 +1,46 @@
+Working with Cameras
+---------------------
+
+>> Working with fswebcam
+
+> First uninstall motion if it was installed and reboot the pi
+
+sudo apt-get remove motion
+
+sudo apt-get purge motion
+
+> Then, update your system's package list by entering the following command:
+
+sudo apt-get update
+
+> Next, upgrade all your installed packages to their latest versions with the command:
+
+sudo apt-get dist-upgrade
+
+> Installing fswebcam - https://www.raspberrypi.org/documentation/usage/webcams/ 
+
+sudo apt-get install fswebcam
+
+> Take an image
+
+fswebcam image.jpg
+
+> Specify the resolution of your image
+
+fswebcam -r 1280x720 image2.jpg
+
+> Specify no banner
+
+fswebcam -r 1280x720 image2.jpg --no-banner
+
+> Create a script to do this
+/home/pi/Downloads/code/cameras/webcam/webcam.sh
+
+> Make sure the script is made executable
+
+Right click the webcam.sh file > Properties > Permissions > Executable to anyone
+
+OR run at the Terminal
+
+chmod +x /home/pi/Downloads/code/cameras/webcam/webcam.sh
+

@@ -1,0 +1,33 @@
+Working with Cameras
+---------------------
+
+> Installing motion to make a WebCam Server
+
+sudo apt-get install motion
+
+Type lsusb
+This will show you if the webcam is connected
+
+> Edit the motion.conf file
+
+sudo nano /etc/motion/motion.conf
+
+Change daemon = off to daemon = on
+
+Change stream_localhost = on to stream_localhost = off
+
+Change webcontrol_localhost off
+
+> Edit the motion file
+
+sudo nano /etc/default/motion
+
+Change start_motion_daemon=no to yes
+
+> Start/Stop the service
+
+sudo service motion start
+
+sudo service motion stop
+
+> Open a broswer and go to http://ipaddress:8081

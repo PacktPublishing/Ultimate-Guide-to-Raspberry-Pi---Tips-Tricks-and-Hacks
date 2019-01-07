@@ -1,0 +1,15 @@
+Setting up a quick web server in one line
+------------------------------------------
+
+> Open the Terminal and navigate to the desired home directory to serve web pages from and run the following command:
+
+python -m SimpleHTTPServer
+
+> Access your web server at the following url in a browser:
+
+http://RPi_ip_address:8000
+
+Substitute your Raspberry Pi IP Address for RPi_ip_address. E.g. if your ip address is 10.0.0.106 your web server will be
+
+http://10.0.0.106:8000
+

@@ -1,0 +1,43 @@
+Installing Apache and PHP
+-------------------------
+
+>> Installing Apache
+
+sudo apt-get install apache2 -y
+
+> Open a browser and go to the following url to test out the web server
+
+http://localhost
+OR
+http://your_ip_address e.g. http://10.0.0.106
+
+You should see the Apache default page
+
+> Default directory /var/www/html and the default page served up is /var/www/html/index.html
+
+
+>> Installing PHP
+
+sudo apt-get install php libapache2-mod-php -y
+
+
+> Restart Apache
+
+sudo apachectl restart
+
+> Testing out the php install
+> Create the php info page
+sudo leafpad /var/www/html/info.php
+
+> Type the following in the info.php file and save it and close it after
+
+<?php phpinfo(); ?>
+
+> Open a browser and go to the following url
+
+http://localhost/info.php
+OR
+http://your_ip_address/info.php e.g. http://10.0.0.106/info.php
+
+You should see the PHP info page
+

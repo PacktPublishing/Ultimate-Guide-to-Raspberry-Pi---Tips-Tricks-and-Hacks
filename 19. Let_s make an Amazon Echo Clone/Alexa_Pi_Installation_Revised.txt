@@ -1,0 +1,50 @@
+# Instructions for installing the Alexa Pi Software
+
+>> Update packages list
+sudo apt-get update
+
+>> Install the latest pacakages and update the OS
+sudo apt-get dist-upgrade
+
+>> Install git
+sudo apt-get install git
+
+>> Install specific version of CherryPy due to AlexaPi bug
+sudo pip install CherryPy==17.4.0
+
+>> Navigate to the opt folder
+cd /opt
+
+>> Clone the Alexa Pi git repository
+sudo git clone https://github.com/alexa-pi/AlexaPi.git
+
+>> Run the Alexa Pi installation script
+sudo ./AlexaPi/src/scripts/setup.sh
+
+-- Press Enter to accept the defaults for the options that are presented while the script is running
+
+>> Would you like to also install Airplay support (Y/n)?
+Type n for NO and hit enter
+
+>> You will be prompted to Enter the Device ID:
+Enter here whatever you had setup in the Developer Portal
+
+>> Enter the Security Profile Description
+Enter the same as above
+
+>> Enter the Security Profile ID
+Copy/Paste the value you stored here
+
+>> Enter the Client ID
+Copy/Paste the value you stored here
+
+>> Enter the Client Secret
+Copy/Paste the value you stored here
+
+>> Perform the step to give appropriate permissions from your Amazon Dev Account for the Alexa Voice Service
+
+>> Starting the Alexa Pi Service
+sudo systemctl start AlexaPi.service
+
+>> Stopping the Alexa Pi Service
+sudo systemctl stop AlexaPi.service
