@@ -1,0 +1,2 @@
+Enabling SSH for Windows 10
+https://www.howtogeek.com/336775/how-to-enable-and-use-windows-10s-built-in-ssh-commands/

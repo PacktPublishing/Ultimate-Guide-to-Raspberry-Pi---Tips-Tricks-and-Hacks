@@ -1,0 +1,8 @@
+Enabling Remote Desktop on Windows 10
+In the next video, we look at how to use the Remote Desktop Protocol to connect to your Raspberry Pi from Windows. If you are running Windows 10, the Remote Desktop application might not be available out of the box. You may have to do a little setup before you can use it.
+
+Here is a link to instructions on how you can enable Remote Desktop Connections in Windows 10 and setup  the Remote Desktop Application
+
+
+
+https://www.windowscentral.com/how-use-remove-desktop-app-connect-pc-windows-10-0

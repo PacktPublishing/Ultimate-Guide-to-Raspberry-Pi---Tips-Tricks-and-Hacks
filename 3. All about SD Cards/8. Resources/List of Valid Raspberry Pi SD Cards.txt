@@ -1,0 +1,2 @@
+List of Valid Raspberry Pi SD Cards
+https://elinux.org/RPi_SD_cards 
